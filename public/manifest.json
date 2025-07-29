@@ -1,0 +1,55 @@
+{
+  "orientation": "any",
+  "name": "LocDo.Tech",
+  "short_name": "LD Tech",
+  "lang": "en-GB",
+  "version": "1.0.1",
+  "description": "Chia sẻ kiến thức, kinh nghiệm và xu hướng phát triển phần mềm, front-end tại Locdo Tech. Tìm hiểu lập trình, công nghệ và công cụ IT mới.",
+  "categories": ["developer", "education"],
+  "shortcuts": [
+    {
+      "short_name": "Me",
+      "name": "About Me",
+      "url": "/",
+      "description": "About the author",
+      "icons": [
+        {
+          "src": "/images/avatar.webp",
+          "type": "image/png",
+          "sizes": "96x96",
+          "purpose": "any"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#0a5",
+  "theme_color": "#0a5",
+  "id": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "screenshots": []
+}

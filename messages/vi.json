@@ -1,0 +1,59 @@
+{
+  "company": {
+    "name": "LocDo.Tech",
+    "tagline": "Giải pháp công nghệ và đào tạo lập trình",
+    "description": "Chúng tôi chuyên phát triển phần mềm và cung cấp các khóa học lập trình chất lượng cao cho học sinh từ cấp 1 đến cấp 3, cũng như các khóa học web, app mobile và Python.",
+    "cta": {
+      "contact": "Liên hệ ngay",
+      "courses": "Xem khóa học"
+    }
+  },
+  "sections": {
+    "services": "Dịch vụ của chúng tôi",
+    "about": "Về chúng tôi",
+    "contact": "Liên hệ"
+  },
+  "services": {
+    "subtitle": "Chúng tôi cung cấp các giải pháp công nghệ toàn diện",
+    "web": {
+      "title": "Phát triển Website",
+      "description": "Thiết kế và phát triển website chuyên nghiệp với công nghệ hiện đại"
+    },
+    "mobile": {
+      "title": "Ứng dụng Mobile",
+      "description": "Phát triển app iOS và Android với trải nghiệm người dùng tuyệt vời"
+    },
+    "python": {
+      "title": "Python & AI",
+      "description": "Giải pháp Python và trí tuệ nhân tạo cho doanh nghiệp"
+    },
+    "education": {
+      "title": "Đào tạo Lập trình",
+      "description": "Dạy lập trình cho học sinh cấp 1, 2, 3 với phương pháp hiện đại"
+    }
+  },
+  "stats": {
+    "projects": "Dự án hoàn thành",
+    "clients": "Khách hàng hài lòng",
+    "years": "Năm kinh nghiệm",
+    "support": "Hỗ trợ"
+  },
+  "about": {
+    "description": "LocDo.Tech là công ty công nghệ hàng đầu chuyên về phát triển phần mềm và đào tạo lập trình. Chúng tôi cam kết mang đến những giải pháp công nghệ tốt nhất và đào tạo thế hệ lập trình viên tương lai."
+  },
+  "features": {
+    "fast": "Nhanh chóng",
+    "precise": "Chính xác",
+    "secure": "Bảo mật"
+  },
+  "navigation": {
+    "home": "Trang chủ",
+    "courses": "Khóa học",
+    "contact": "Liên hệ"
+  },
+  "contact": {
+    "subtitle": "Hãy liên hệ với chúng tôi để được tư vấn miễn phí",
+    "phone": "0968.343.185",
+    "email": "locdx@locdo.tech"
+  }
+}

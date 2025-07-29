@@ -1,0 +1,39 @@
+{
+  "company": {
+    "name": "LocDo.Tech",
+    "tagline": "技术解决方案与编程教育",
+    "description": "我们专业从事软件开发，为小学到高中的学生提供高质量的编程课程，以及网页、移动应用和Python课程。",
+    "cta": {
+      "contact": "立即联系",
+      "courses": "查看课程"
+    }
+  },
+  "services": {
+    "title": "我们的服务",
+    "web": {
+      "title": "网站开发",
+      "description": "专业网站设计与开发"
+    },
+    "mobile": {
+      "title": "移动应用",
+      "description": "iOS和Android应用开发"
+    },
+    "python": {
+      "title": "Python与AI",
+      "description": "Python解决方案和人工智能"
+    },
+    "education": {
+      "title": "编程教育",
+      "description": "为小学、初中和高中学生教授编程"
+    }
+  },
+  "navigation": {
+    "home": "首页",
+    "courses": "课程",
+    "contact": "联系"
+  },
+  "contact": {
+    "phone": "0968.343.185",
+    "email": "locdx@locdo.tech"
+  }
+}

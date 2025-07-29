@@ -1,0 +1,59 @@
+{
+  "company": {
+    "name": "LocDo.Tech",
+    "tagline": "Technology Solutions & Programming Education",
+    "description": "We specialize in software development and provide high-quality programming courses for students from elementary to high school, as well as web, mobile app, and Python courses.",
+    "cta": {
+      "contact": "Contact Us",
+      "courses": "View Courses"
+    }
+  },
+  "sections": {
+    "services": "Our Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "services": {
+    "subtitle": "We provide comprehensive technology solutions",
+    "web": {
+      "title": "Website Development",
+      "description": "Professional website design and development with modern technologies"
+    },
+    "mobile": {
+      "title": "Mobile Applications",
+      "description": "Develop iOS and Android apps with excellent user experience"
+    },
+    "python": {
+      "title": "Python & AI",
+      "description": "Python and artificial intelligence solutions for businesses"
+    },
+    "education": {
+      "title": "Programming Education",
+      "description": "Teaching programming to elementary, middle, and high school students with modern methods"
+    }
+  },
+  "stats": {
+    "projects": "Completed Projects",
+    "clients": "Happy Clients",
+    "years": "Years Experience",
+    "support": "Support"
+  },
+  "about": {
+    "description": "LocDo.Tech is a leading technology company specializing in software development and programming education. We are committed to providing the best technology solutions and training the next generation of programmers."
+  },
+  "features": {
+    "fast": "Fast",
+    "precise": "Precise",
+    "secure": "Secure"
+  },
+  "navigation": {
+    "home": "Home",
+    "courses": "Courses",
+    "contact": "Contact"
+  },
+  "contact": {
+    "subtitle": "Contact us for free consultation",
+    "phone": "0968.343.185",
+    "email": "locdx@locdo.tech"
+  }
+}

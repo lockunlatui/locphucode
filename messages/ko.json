@@ -1,0 +1,39 @@
+{
+  "company": {
+    "name": "LocDo.Tech",
+    "tagline": "기술 솔루션 및 프로그래밍 교육",
+    "description": "저희는 소프트웨어 개발을 전문으로 하며, 초등학교부터 고등학교까지의 학생들을 위한 고품질 프로그래밍 과정과 웹, 모바일 앱, Python 과정을 제공합니다.",
+    "cta": {
+      "contact": "지금 연락하기",
+      "courses": "과정 보기"
+    }
+  },
+  "services": {
+    "title": "우리의 서비스",
+    "web": {
+      "title": "웹사이트 개발",
+      "description": "전문적인 웹사이트 설계 및 개발"
+    },
+    "mobile": {
+      "title": "모바일 애플리케이션",
+      "description": "iOS 및 Android 앱 개발"
+    },
+    "python": {
+      "title": "Python & AI",
+      "description": "Python 솔루션 및 인공지능"
+    },
+    "education": {
+      "title": "프로그래밍 교육",
+      "description": "초등학생, 중학생, 고등학생에게 프로그래밍 교육"
+    }
+  },
+  "navigation": {
+    "home": "홈",
+    "courses": "과정",
+    "contact": "연락"
+  },
+  "contact": {
+    "phone": "0968.343.185",
+    "email": "locdx@locdo.tech"
+  }
+}

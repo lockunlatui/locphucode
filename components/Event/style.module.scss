@@ -1,0 +1,154 @@
+.container {
+  background-color: inherit;
+  padding: 0px 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .formWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .bank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    @media only screen and (max-width: 991px) {
+      flex-direction: column
+    }
+
+    .imgHappy {
+      width: 100%;
+      height: 100%;
+      max-width: 350px;
+    }
+
+    .vietcombank {
+      display: block;
+      margin-top: 10px;
+      color: rgb(0, 128, 71);
+    }
+
+    .momo {
+      display: block;
+      margin-top: 10px;
+      color: #a50064;
+    }
+
+    p {
+      margin: 0px;
+      margin-top: 10px;
+    }
+  }
+
+  .titleWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-size: 2.5rem;
+      margin: 0px;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+  }
+
+  .list {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0px;
+
+    
+    @media only screen and (max-width: 991px) {
+      flex-direction: column
+    }
+
+    .item {
+      background: #fff;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 500px;
+      width: 100%;
+      position: relative;
+      background-size: cover;
+
+      @media only screen and (max-width: 991px) {
+        max-width: 100%;
+      }
+
+      .weddingSign {
+        position: absolute;
+        top: -30px;
+      }
+
+      .wrap {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+
+        .time {
+          font-size: 2rem;
+
+          span {
+            color: #a5dc86c2;
+            font-weight: bold;
+          }
+        }
+
+        .parent {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content:center;
+          gap: 20px;
+
+          .grideHouse {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+
+            span {
+              margin-bottom: 5px;
+            }
+          }
+        }
+
+        .title {
+          text-transform: uppercase;
+          color: black;
+        }
+
+        &:first-child {
+          display: flex;
+
+          .wrapperGroomBride {
+            flex-direction: column-reverse;
+          }
+        }
+
+        .wrapperGroomBride {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "locdo.tech",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "gsap": "^3.12.1",
+    "next": "^15.4.4",
+    "next-pwa": "^5.6.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-spring": "^10.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.1.0",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^9.32.0",
+    "eslint-config-next": "^15.4.4",
+    "postcss": "^8.4.24",
+    "sass": "^1.53.0",
+    "tailwindcss": "^4.1.11",
+    "typescript": "5.8.3"
+  },
+  "browserslist": [
+    "chrome 64",
+    "edge 79",
+    "firefox 67",
+    "opera 51",
+    "safari 12"
+  ]
+}

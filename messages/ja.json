@@ -1,0 +1,39 @@
+{
+  "company": {
+    "name": "LocDo.Tech",
+    "tagline": "テクノロジーソリューション＆プログラミング教育",
+    "description": "ソフトウェア開発を専門とし、小学生から高校生までの学生向けの高品質なプログラミングコース、ウェブ、モバイルアプリ、Pythonコースを提供しています。",
+    "cta": {
+      "contact": "今すぐ連絡",
+      "courses": "コースを見る"
+    }
+  },
+  "services": {
+    "title": "私たちのサービス",
+    "web": {
+      "title": "ウェブサイト開発",
+      "description": "プロフェッショナルなウェブサイト設計・開発"
+    },
+    "mobile": {
+      "title": "モバイルアプリケーション",
+      "description": "iOSとAndroidアプリ開発"
+    },
+    "python": {
+      "title": "Python＆AI",
+      "description": "Pythonソリューションと人工知能"
+    },
+    "education": {
+      "title": "プログラミング教育",
+      "description": "小学生、中学生、高校生にプログラミングを教える"
+    }
+  },
+  "navigation": {
+    "home": "ホーム",
+    "courses": "コース",
+    "contact": "連絡"
+  },
+  "contact": {
+    "phone": "0968.343.185",
+    "email": "locdx@locdo.tech"
+  }
+}
