@@ -1,5 +1,6 @@
 import Menu from "@/components/Menu";
 import "../global.scss";
+import "../globals-gsap.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

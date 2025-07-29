@@ -2,6 +2,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextPlugin } from "gsap/TextPlugin";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 export function useGSAPAnimations(isLoading: boolean) {
   const animationsRef = useRef<any[]>([]);
@@ -9,7 +11,7 @@ export function useGSAPAnimations(isLoading: boolean) {
   useEffect(() => {
     if (!isLoading && typeof window !== "undefined") {
       // Register GSAP plugins
-      gsap.registerPlugin(ScrollTrigger);
+      gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
       // Kill existing animations
       animationsRef.current.forEach((anim) => anim.kill());
