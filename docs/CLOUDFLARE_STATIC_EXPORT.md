@@ -8,7 +8,19 @@ Framework preset: Next.js (Static HTML Export)
 Build command: npm run build
 Build output directory: out
 Root directory: (leave empty)
+
+❌ REMOVE THESE IF PRESENT:
+Deploy command: (leave empty - remove "npx wrangler deploy")
+Non-production branch deploy command: (leave empty)
 ```
+
+### ⚠️ **CRITICAL FIX FOR WRANGLER ERROR:**
+If you see "wrangler deploy" in Cloudflare Pages settings:
+1. **Edit Build Configuration** in Cloudflare Pages
+2. **Clear "Deploy command"** field completely  
+3. **Clear "Non-production branch deploy command"** field
+4. **Keep only "Build command": npm run build**
+5. **Framework preset**: Next.js (Static HTML Export)
 
 ### 🌍 **Environment Variables:**
 ```

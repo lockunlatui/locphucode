@@ -7,17 +7,15 @@ interface PageProps {
 
 export async function generateStaticParams() {
   return [
-    { locale: 'vi' },
-    { locale: 'en' },
-    { locale: 'ja' },
-    { locale: 'ko' },
-    { locale: 'zh' },
-  ]
+    { locale: "vi" },
+    { locale: "en" },
+    { locale: "ja" },
+    { locale: "ko" },
+    { locale: "zh" },
+  ];
 }
 
-export default async function LocalePage({
-  params,
-}: PageProps) {
+export default async function LocalePage({ params }: PageProps) {
   const { locale } = await params;
   return <HomePageClient locale={locale} />;
 }

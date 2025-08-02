@@ -14,7 +14,7 @@ module.exports = withPWA({
   },
 
   // For Cloudflare Pages - static export for compatibility
-  output: 'export',
+  output: "export",
   trailingSlash: true,
   images: {
     domains: ["i.imgur.com"],

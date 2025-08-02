@@ -1,7 +1,7 @@
-export const dynamic = 'force-static'
+export const dynamic = "force-static";
 
-import { MetadataRoute } from 'next'
- 
+import { MetadataRoute } from "next";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
