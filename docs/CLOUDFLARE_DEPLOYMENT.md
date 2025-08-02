@@ -4,7 +4,7 @@
 
 ### 1. **Build Settings cho Cloudflare Pages**
 - **Framework preset**: Next.js
-- **Build command**: `yarn build`
+- **Build command**: `npm run build`
 - **Build output directory**: `.next`
 - **Root directory**: `/`
 - **Node.js version**: `18.x`
@@ -15,6 +15,8 @@ Thêm vào Cloudflare Pages Settings → Environment Variables:
 ```env
 # Production Environment Variables
 NODE_ENV=production
+NODE_VERSION=18
+NEXT_TELEMETRY_DISABLED=1
 NEXT_PUBLIC_SITE_URL=https://your-site.pages.dev
 
 # Email Notifications
@@ -27,7 +29,33 @@ NEXT_PUBLIC_FACEBOOK_PIXEL_ID=123456789012345
 
 ---
 
-## 🔧 **Deploy Steps**
+## � **READY TO DEPLOY! Đã sửa xong Yarn conflicts**
+
+### ✅ **Vấn đề đã được sửa:**
+1. **Yarn lockfile conflicts** → Đã reinstall với Yarn 1.22.22
+2. **Node.js version issues** → Đã thêm .nvmrc và engines config
+3. **Build system compatibility** → Đã test build thành công
+4. **Email notification system** → Working với locdo.tech domain
+
+### 🔧 **Settings cho Cloudflare Pages:**
+
+**Framework preset**: `Next.js`  
+**Build command**: `yarn build`  
+**Build output directory**: `.next`  
+**Root directory**: `/` (để trống)
+
+**Environment Variables** (QUAN TRỌNG):
+```
+NODE_VERSION=18
+NEXT_TELEMETRY_DISABLED=1
+RESEND_API_KEY=re_YkSQpBBn_PXHyiXKrDCN1TzJ5StDHyxta
+NODE_ENV=production
+NEXT_PUBLIC_SITE_URL=https://your-site.pages.dev
+```
+
+---
+
+## �🔧 **Deploy Steps**
 
 ### Method 1: GitHub Integration (Recommended)
 

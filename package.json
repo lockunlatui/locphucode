@@ -4,13 +4,14 @@
   "private": true,
   "engines": {
     "node": ">=18.0.0",
-    "yarn": ">=1.22.0"
+    "npm": ">=8.0.0"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "next telemetry disable"
   },
   "dependencies": {
     "classnames": "^2.3.1",
