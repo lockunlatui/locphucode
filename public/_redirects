@@ -1,0 +1,16 @@
+# API Routes
+/api/* /api/:splat 200
+
+# Locale redirects
+/ /vi 302
+/index.html /vi 302
+
+# Clean URLs
+/vi/index.html /vi 301
+/en/index.html /en 301
+/zh/index.html /zh 301
+/ja/index.html /ja 301
+/ko/index.html /ko 301
+
+# Fallback for SPA routing
+/* /index.html 200

@@ -8,6 +8,11 @@ const defaultLocale = "vi";
 export default function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
+  // Skip middleware for API routes
+  if (pathname.startsWith("/api/")) {
+    return NextResponse.next();
+  }
+
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
@@ -24,9 +29,7 @@ export default function middleware(request: NextRequest) {
 // See "Matching Paths" below to learn more
 export const config = {
   matcher: [
-    // Skip all internal paths (_next)
-    "/((?!_next/static|_next/image|favicon.ico).*)",
-    // Optional: only run on root (/) URL
-    // '/'
+    // Skip all internal paths (_next), API routes, and static files
+    "/((?!_next/static|_next/image|api|favicon.ico|.*\\.[^/]*$).*)",
   ],
 };

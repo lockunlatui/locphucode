@@ -1,0 +1,367 @@
+/* Enhanced Contact Form with Lead Qualification */
+.contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Progress Bar */
+.progressBar {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.progressFill {
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.progressSteps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.progressStep {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #64748b;
+  transition: all 0.3s ease;
+}
+
+.progressStep.completed {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Mini Score Display */
+.miniScoreDisplay {
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.miniScoreDisplay .hot {
+  color: #e53e3e;
+  font-weight: bold;
+}
+.miniScoreDisplay .warm {
+  color: #dd6b20;
+  font-weight: bold;
+}
+.miniScoreDisplay .cold {
+  color: #4a5568;
+}
+
+/* Step Content */
+.stepContent {
+  min-height: 300px;
+}
+
+.stepContent h3 {
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Form Groups */
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+.formGroup input:required:invalid {
+  border-color: #fed7d7;
+}
+
+.formGroup input:required:valid {
+  border-color: #c6f6d5;
+}
+
+/* Checkbox Group */
+.checkboxGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.checkboxItem:hover {
+  background: rgba(102, 126, 234, 0.05);
+}
+
+.checkboxItem input {
+  width: auto !important;
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}
+
+/* Lead Score Display */
+.leadScore {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.scoreIndicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  background: white;
+  border: 2px solid;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.scoreIndicator.hot {
+  border-color: #e53e3e;
+  color: #e53e3e;
+  background: linear-gradient(135deg, #fed7d7, #feb2b2);
+}
+
+.scoreIndicator.warm {
+  border-color: #dd6b20;
+  color: #dd6b20;
+  background: linear-gradient(135deg, #feebc8, #fbd38d);
+}
+
+.scoreIndicator.cold {
+  border-color: #4a5568;
+  color: #4a5568;
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e0);
+}
+
+.scoreNumber {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Success Step */
+.successStep {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.successIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.nextSteps {
+  margin-top: 2rem;
+  text-align: left;
+  background: #f7fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.nextSteps h4 {
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.nextSteps ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nextSteps li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nextSteps li:last-child {
+  border-bottom: none;
+}
+
+/* Navigation Buttons */
+.formNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.prevButton,
+.nextButton,
+.submitButton,
+.bookingButton {
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.prevButton {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.prevButton:hover {
+  background: #cbd5e0;
+  transform: translateY(-1px);
+}
+
+.nextButton,
+.submitButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.nextButton:hover,
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.nextButton:disabled,
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.bookingButton {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+  color: white;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.bookingButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactForm {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .checkboxGroup {
+    grid-template-columns: 1fr;
+  }
+
+  .formNavigation {
+    flex-direction: column;
+  }
+
+  .prevButton,
+  .nextButton,
+  .submitButton {
+    width: 100%;
+  }
+}
+
+/* Loading States */
+.submitButton:disabled {
+  background: linear-gradient(135deg, #a0aec0 0%, #718096 100%);
+  cursor: not-allowed;
+}
+
+/* Focus Accessibility */
+.contactForm *:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Animation for step transitions */
+.stepContent {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

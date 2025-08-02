@@ -2,6 +2,10 @@
   "name": "locdo.tech",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.22.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,6 +22,7 @@
     "react-spring": "^10.0.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "24.1.0",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",

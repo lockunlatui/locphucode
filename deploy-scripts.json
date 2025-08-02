@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy:prepare": "yarn install && yarn build",
+    "deploy:cloudflare": "yarn deploy:prepare && echo 'Ready for Cloudflare Pages deployment!'",
+    "test:build": "yarn build && yarn start"
+  }
+}

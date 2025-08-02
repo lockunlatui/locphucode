@@ -1,5 +1,7 @@
 "use client";
-import { forwardRef } from "react";
+import { forwardRef, useState } from "react";
+import ContactForm from "../ContactForm";
+import LeadDashboard from "../LeadDashboard";
 import styles from "../../app/Home.module.css";
 import { APP_CONFIG } from "../../constants/app";
 
@@ -9,6 +11,20 @@ interface ContactSectionProps {
 
 const ContactSection = forwardRef<HTMLDivElement, ContactSectionProps>(
   ({ t }, ref) => {
+    const [showDashboard, setShowDashboard] = useState(false);
+    const [clickCount, setClickCount] = useState(0);
+
+    const handleSecretAccess = () => {
+      setClickCount((prev) => prev + 1);
+      if (clickCount >= 4) {
+        // 5 clicks total
+        setShowDashboard(true);
+        setClickCount(0);
+      }
+      // Reset counter after 3 seconds
+      setTimeout(() => setClickCount(0), 3000);
+    };
+
     return (
       <section
         className={`${styles.contactSection} contact-section`}
@@ -17,8 +33,24 @@ const ContactSection = forwardRef<HTMLDivElement, ContactSectionProps>(
       >
         <div className={styles.container}>
           <div className={styles.contactContent}>
-            <h2 className={styles.sectionTitle}>{t("sections.contact")}</h2>
+            <h2
+              className={styles.sectionTitle}
+              onClick={handleSecretAccess}
+              style={{ cursor: clickCount > 0 ? "pointer" : "default" }}
+            >
+              {t("sections.contact")}
+              {clickCount > 0 && (
+                <span style={{ opacity: 0.3 }}> ({clickCount}/5)</span>
+              )}
+            </h2>
             <p className={styles.sectionSubtitle}>{t("contact.subtitle")}</p>
+
+            {/* Enhanced Contact Form */}
+            <ContactForm t={t} />
+
+            <div className={styles.contactDivider}>
+              <span>Hoặc liên hệ trực tiếp</span>
+            </div>
 
             <div className={styles.contactInfo}>
               <div className={`${styles.contactItem} contactItem`}>
@@ -72,6 +104,12 @@ const ContactSection = forwardRef<HTMLDivElement, ContactSectionProps>(
             </div>
           </div>
         </div>
+
+        {/* Secret Lead Dashboard */}
+        <LeadDashboard
+          isVisible={showDashboard}
+          onClose={() => setShowDashboard(false)}
+        />
       </section>
     );
   }

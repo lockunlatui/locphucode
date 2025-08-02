@@ -1,0 +1,2 @@
+# Cloudflare Pages Node.js environment configuration
+NODE_VERSION=18

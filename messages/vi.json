@@ -54,6 +54,15 @@
   "contact": {
     "subtitle": "Hãy liên hệ với chúng tôi để được tư vấn miễn phí",
     "phone": "0968.343.185",
-    "email": "locdx@locdo.tech"
+    "email": "locdx@locdo.tech",
+    "form": {
+      "name": "Họ và tên",
+      "email": "Địa chỉ email",
+      "phone": "Số điện thoại",
+      "company": "Công ty/Tổ chức",
+      "message": "Mô tả chi tiết dự án của bạn...",
+      "submit": "Gửi yêu cầu báo giá",
+      "success": "Cảm ơn bạn! Chúng tôi sẽ liên hệ sớm nhất."
+    }
   }
 }
