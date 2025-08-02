@@ -13,12 +13,17 @@
      
 ### ⚠️ **QUAN TRỌNG - Cloudflare Pages Settings:**
 ```
-Framework preset: Next.js
+Framework preset: Next.js (Static HTML Export)
 Build command: npm run build  
 Build output directory: .next
 Root directory: (leave empty)
 Node.js version: 18 (in Environment Variables)
-```Build Settings cho Cloudflare Pages**
+```
+
+### 🚨 **Nếu Cloudflare cố dùng Wrangler thay vì Next.js:**
+- **Đảm bảo chọn Framework preset là "Next.js" KHÔNG PHẢI "None" hoặc "Static"**
+- **Nếu vẫn lỗi, thử Framework preset: "Next.js (Static HTML Export)"**
+- **Đảm bảo Build command là: `npm run build`**Build Settings cho Cloudflare Pages**
 - **Framework preset**: Next.js
 - **Build command**: `npm run build`
 - **Build output directory**: `.next`
@@ -36,7 +41,7 @@ NEXT_TELEMETRY_DISABLED=1
 NEXT_PUBLIC_SITE_URL=https://your-site.pages.dev
 
 # Email Notifications
-RESEND_API_KEY=re_YkSQpBBn_PXHyiXKrDCN1TzJ5StDHyxta
+RESEND_API_KEY=YOUR_NEW_RESEND_API_KEY_HERE
 
 # Analytics (Optional)
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX

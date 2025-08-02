@@ -1,0 +1,7 @@
+name = "locdo-tech"
+compatibility_date = "2025-08-02"
+node_compat = true
+pages_build_output_dir = ".next"
+
+[env.production]
+node_compat = true
