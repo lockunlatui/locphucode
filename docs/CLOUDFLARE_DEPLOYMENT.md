@@ -2,7 +2,23 @@
 
 ## 📋 **Chuẩn Bị Deploy**
 
-### 1. **Build Settings cho Cloudflare Pages**
+#### 2. **Kết nối Cloudflare Pages:**
+   - Vào: https://dash.cloudflare.com
+   - Pages → Create a project
+   - Connect to Git → Select repository
+   - Configure build settings:
+     - Build command: `npm run build`
+     - Build output: `.next`
+     - Environment variables: Add từ list trên
+     
+### ⚠️ **QUAN TRỌNG - Cloudflare Pages Settings:**
+```
+Framework preset: Next.js
+Build command: npm run build  
+Build output directory: .next
+Root directory: (leave empty)
+Node.js version: 18 (in Environment Variables)
+```Build Settings cho Cloudflare Pages**
 - **Framework preset**: Next.js
 - **Build command**: `npm run build`
 - **Build output directory**: `.next`
