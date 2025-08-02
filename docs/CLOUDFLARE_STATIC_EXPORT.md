@@ -43,15 +43,33 @@ RESEND_API_KEY=YOUR_NEW_RESEND_API_KEY_HERE
 
 ## 🎯 **Deploy Steps:**
 
+### 🚨 **CRITICAL: You MUST Clear Deploy Commands in Cloudflare**
+
+**Your current Cloudflare Pages settings still have:**
+- Deploy command: `npx wrangler deploy` ❌ 
+- Non-production deploy: `npx wrangler versions upload` ❌
+
+**THIS IS CAUSING THE WRANGLER ERROR!**
+
+### **Fix Steps:**
 1. **Vào**: https://dash.cloudflare.com
-2. **Pages** → "Create a project" → "Connect to Git" 
-3. **Repository**: `lockunlatui/locphucode`
-4. **Branch**: `master`
-5. **Framework preset**: `Next.js (Static HTML Export)` ⚠️ IMPORTANT
-6. **Build command**: `npm run build`
-7. **Build output**: `out` 
-8. **Add Environment Variables** từ list trên
-9. **Save and Deploy**
+2. **Pages** → Your project → **Settings**
+3. **Build & deployments** → **Edit Configuration**
+4. **CLEAR these fields completely:**
+   - Deploy command: `(delete everything - leave empty)`
+   - Non-production branch deploy command: `(delete everything - leave empty)`
+5. **Keep only:**
+   - Build command: `npm run build`
+   - Build output directory: `out`
+   - Framework preset: `Next.js (Static HTML Export)`
+
+### **Screenshot Reference:**
+Based on your screenshot, you have:
+- Build command: `npm run build` ✅ (correct)
+- Deploy command: `npx wrangler deploy` ❌ (REMOVE THIS)
+- Non-production: `npx wrangler versions upload` ❌ (REMOVE THIS)
+
+**Just clear/delete the Deploy command fields!**
 
 ---
 
