@@ -1,2 +1,2 @@
-# Cloudflare Pages - NOT Workers
-framework=nextjs
+# Cloudflare Workers - Static Export
+# This file removed to deploy as Workers
